@@ -1,0 +1,106 @@
+{
+	"easycom": {
+		"^uni-(.*)": "@/components/uni-app/uni-$1/uni-$1.vue",
+		"^tui-(.*)": "@/components/ThorUI/tui-$1/tui-$1.vue",
+		"^yf-(.*)": "@/components/yf-ui/yf-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom",
+				"disableScroll": true
+			}
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/students/index",
+			"style": {
+				"navigationBarTitleText": "学生管理",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/students/addStudents",
+			"style": {
+				"navigationBarTitleText": "添加学生",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+
+		}, {
+			"path": "pages/students/userInfo",
+			"style": {
+				"navigationBarTitleText": " 个人信息",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+
+		},{
+            "path" : "pages/consume/consume",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消费记录",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "待处理",
+               "navigationStyle": "custom",
+               "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/detailList",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "请假管理",
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+    ],
+	// "tabBar": {
+		// "color": "#333333",
+		// "selectedColor": "#2287FC",
+		// "borderStyle": "black",
+		// "backgroundColor": "#ffffff",
+		// "list": [{
+		// 		"pagePath": "pages/index/index",
+		// 		"iconPath": "static/tabbar/index_off.png",
+		// 		"selectedIconPath": "static/tabbar/index_on.png",
+		// 		"text": "首页"
+		// 	}
+			// ,
+			// {
+			// 	"pagePath": "pages/user/user",
+			// 	"iconPath": "static/tabbar/user_off.png",
+			// 	"selectedIconPath": "static/tabbar/user_on.png",
+			// 	"text": "消息"
+			// }
+		// ]
+	// },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "金证智校",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
