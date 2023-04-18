@@ -1,0 +1,85 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@friendlyjesse/uni-router": "^1.0.8",
+    "Base64": "^1.1.0",
+    "big.js": "^5.2.2",
+    "callapp-lib": "^2.1.8",
+    "cos-js-sdk-v5": "^0.4.6",
+    "cos-wx-sdk-v5": "^0.6.0",
+    "dayjs": "^1.10.4",
+    "eruda": "^2.1.0",
+    "js-md5": "^0.7.3",
+    "jweixin-module": "file:jweixin-module",
+    "luch-request": "^3.0.6",
+    "md5": "^2.2.1",
+    "moment": "^2.29.1",
+    "numeral": "^2.0.6",
+    "pako": "^1.0.11",
+    "tim-js-sdk": "^2.8.0",
+    "tim-wx-sdk": "^2.8.0"
+  },
+  "devDependencies": {
+    "@friendlyjesse/uni-extract": "^1.0.1",
+    "compression-webpack-plugin": "^6.1.1",
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "husky": "^6.0.0",
+    "jsdoc": "^3.6.6",
+    "lint-staged": "^11.0.0",
+    "minami": "^1.2.3",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^4.4.1"
+  },
+  "uni-app": {
+    "scripts": {
+      "h5-dev": {
+        "title": "h5测试环境",
+        "env": {
+          "UNI_PLATFORM": "h5",
+          "APP_ENV": "development"
+        }
+      },
+      "h5-pro": {
+        "title": "h5正式环境",
+        "env": {
+          "UNI_PLATFORM": "h5",
+          "APP_ENV": "production"
+        }
+      },
+      "weixin-dev": {
+        "title": "小程序测试环境",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "APP_ENV": "development"
+        }
+      },
+      "weixin-pro": {
+        "title": "小程序正式环境",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin",
+          "APP_ENV": "production"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "jsdoc": "jsdoc -c jsdoc.json",
+    "router": "router ./.router.json",
+    "lint": "eslint common/ utils/ mixins/ config/ pages/ --fix --ext .js --ext .vue",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.yfkjqh.com:3000/yupeng/qihui_wxchat_client_2.0.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
